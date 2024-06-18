@@ -1,0 +1,8 @@
+@font-face {
+    font-family:'TTNorms-ExtraLight';
+    src: url(../Fonts/TTNorms-ExtraLight.otf);
+}
+*{
+    margin: 0px;
+    font-family: 'TTNorms-ExtraLight';
+}

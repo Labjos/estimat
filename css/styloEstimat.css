@@ -1,0 +1,309 @@
+@font-face {
+    font-family: 'TTNorms-ExtraLight';
+    src: url(../Fonts/TTNorms-Light.otf);
+}
+*{
+    margin: 0px;
+    font-family: 'TTNorms-ExtraLight';
+}
+
+#cabecera{
+    display: flex;
+    width: 100vw;
+    height: 22vh;
+    background-color: #fff;
+}
+#espacioLogo {
+    width: 70vh;
+    height: 20vh;
+    margin-left: 25%;
+}
+#logo{
+    width: 19vw;
+    height: 17vh;
+    background-image: url(../image/LogoEC.png);
+    background-size: cover;
+    margin-left: 2%;
+    margin-top: 35px;
+}
+#menu {
+    display: flex;
+    width: 40vw;
+    height: 20px;
+    justify-content:space-evenly;
+    margin-top: 100px;
+    margin-left: 12%;
+}
+#menu li {
+    text-decoration: none;
+    list-style-type: none;
+}
+#menu li a {
+    color: rgb(115,138,68); 
+    font-size: 22px;
+    text-decoration: none;
+    list-style-type: none;
+}
+#menu li a:hover {
+    color:  rgb(230,150,50);
+}
+#presentacion{
+    display: flex;
+    width: 100vw;
+    height: 82vh;
+    margin-top: 0;
+    background-color: #fff;
+}
+#imagenPresentacion{
+    width: 100vw;
+    height: 82vh;
+}
+#soloImagen{
+    width: 44vw;
+    height: 73vh;
+    background-image: url(../image/torta.jpg);
+    background-size: cover;
+    margin-left: 20%;
+}
+.textPresentacion{
+    width: 25vw;
+    height: 20vh;
+    font-size: 45px;
+    color: rgb(14,204,207);
+    font-weight: 600;
+    margin-left: 140px;
+    margin-top: 5px;
+}
+.blueText{
+    width: 25vw;
+    height: 8vh;
+    font-size: 35px;
+    color: rgb(14,204,207);
+    font-weight: 600;
+    margin-top: 10px;
+}
+#subText{
+    width: 20vw;
+    height: 0vh;
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 70px;
+    margin-left: 5%;
+}
+#animaPresentacion{
+    width: 50vw;
+    margin-left: 5%;
+}
+#partAnimada{
+    display: flex;
+    width: 50vw;
+    margin-left: 10%;
+}
+.contenedor{
+    display: flex;
+    width: 30vw;
+    height: 6vh;
+    font-size: 50px;
+    color:rgb(14,204,207);
+    line-height: 6vh;
+    overflow: hidden;
+    margin-top: 70px;
+}
+.textSeccio{
+    font-size: 50px;
+    color:rgb(115,138,68) ;
+    margin-top: 10px;
+    margin-left: 15%;
+}
+#textAnima{
+    font-size: 50px;
+    color:rgb(115,138,68) ;
+}
+ul {
+    list-style: none;
+    animation: cambios 10s infinite;
+}
+@keyframes cambios {
+    0%{ margin-top: 0; }
+    20%{ margin-top: 0;}
+
+    25%{ margin-top: -6vh;}
+    50%{margin-top: -6vh;}
+
+    55%{margin-top: -12vh;}
+    80%{margin-top: -12vh;}
+
+    85%{margin-top: -6vh;}
+    95%{margin-top: -6vh;}
+
+    100%{margin-top: 0;}
+}
+#accesCalendary{
+    width: 50%;
+    margin-left: 10%;
+}
+#iso{
+    margin-top: 70px;
+}
+#line{
+    width: 7vw;
+    height: 0.5vh;
+    background-color:rgb(230,156,142);
+    margin-top: 50PX;
+}
+.secondLine{
+    width: 7vw;
+    height: 0.5vh;
+    background-color:rgb(230,156,142);
+    margin-top: 50PX;
+    margin-left: 15%;
+}
+
+#textCalendary{
+    width: 20vw;
+    height: 20vh;
+    font-size: 50px;
+    font-weight: 700;
+    color:rgb(230,156,142) ;
+    margin-top: 30PX;
+}
+.boton{
+    display: inline-flex;
+    width: 12vw;
+    height: 7vh;
+    color: #fff;
+    font-size: 20px;
+    background-color:rgb(230,156,142);
+    border: none;
+    align-items: center;
+    justify-content: center;
+    transition: 3s ease all;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.boton::after{
+    content: "";
+    width: 1px;
+    height: 1px;
+    background-color:rgb(230, 156, 142);
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transition: .3s ease-in-out all;
+    border-radius: 100px;
+    transform-origin: center;
+}
+.boton:hover::after{
+    transform: scale(500);
+    background-color: rgba(14, 208, 207, 0.5);
+}
+#icones{
+    margin-top: 100px;
+    margin-left: 30%;
+}
+#oferta{
+    display: flex;
+    width: 90vw;
+    height: 87vh;
+    justify-content: space-between;
+    margin-left: 3%;
+}
+.serveis{
+    margin-top: 40px;
+    margin-left: 5%;
+}
+
+.explicacionServicios{
+    display: flex;
+    margin-top: 20px;
+}
+#textServeis{
+    width: 20vw;
+    height: 15vh;
+    font-size: 60px;
+    font-weight: 800;
+    color:rgb(230,150,50) ;
+}
+#secondTextServeis{
+    width: 15vw;
+    height: 5vh;
+    font-size: 35px;
+    font-weight: 800;
+    color:rgb(53,75,38) ;
+    margin-top: 20px;
+    margin-left: 300px;
+}
+#lineServeis{
+    width: 7vw;
+    height: 0.5vh;
+    background-color:rgb(230,150,50);
+}
+.serveImagen{
+    width: 22vw;
+    height: 35vh;
+    margin-top: 90px;
+    background-size: cover;
+}
+#secondLineServeis{
+    width: 3vw;
+    height: 0.5vh;
+    background-color:rgb(53,75,38);
+    margin-top: 20px;
+    margin-left: 200px;
+}
+#secondSubText{
+    width: 10vw;
+    height: 0vh;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 300px;
+}
+#especialitats{
+    display: flex;
+    width: 90vw;
+    height: 80vh;
+    justify-content: space-between;
+    margin-left: 3%;
+}
+#imagenServeis{
+    width: 100vw;
+    height: 82vh;
+}
+#serveisImagen{
+    width: 45vw;
+    height: 75vh;
+    background-image: url(../image/Albabata.jpg);
+    background-size: cover;
+    margin-left: 15%;
+}
+.textPresentacion{
+    width: 25vw;
+    height: 20vh;
+    font-size: 45px;
+    color: rgb(14,204,207);
+    font-weight: 600;
+    margin-left: 140px;
+    margin-top: 30px;
+}
+
+
+
+footer{
+    display: flex;
+    width: 100vw;
+    height: 40vh;
+}
+#zonaLogo{
+    width: 15vw;
+    height: 40vh;
+    margin-left: 10%;
+    margin-top: 50PX;
+}
+#zonaContacto{
+    width: 65vw;
+    height: 40vh;
+    background-color: antiquewhite;
+}
